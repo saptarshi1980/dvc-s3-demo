@@ -1,0 +1,43 @@
+ 1 try { . "c:\Users\user\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\... 
+   2 conda create -p venv python==3.10
+   3 conda activate venv
+   4 python .\src\data_ingestion.py
+   5 python .\src\data_ingestion.py
+   6 python .\src\data_ingestion.py
+   7 git init
+   8 dvc init
+   9 git branch -M main
+  10 git remote add origin https://github.com/saptarshi1980/dvc-s3-demo.git
+  11 pip install dvc[s3]
+  12 pip install awscli
+  13 aws configure
+  14 dvc remode add -d dvcremote s3:::saptarshidvcbucket
+  15 dvc remode add -d dvcremote s3://saptarshidvcbucket
+  16 dvc remote add -d dvcremote s3://saptarshidvcbucket
+  17 dvc add .\data\raw\student_performance.csv
+  18 dvc add .\data\processed\student_performance_pca.csv
+  19 git status
+  20 git add .
+  21 git add .
+  22 git reset
+  23 git status
+  24 git add .
+  25 git reset
+  26 git add .
+  27 git reset
+  28 git add .
+  29 git reset
+  30 git add .
+  31 git commit -m "Initial commit with PC2"
+  32 dvc push
+  33 git push origin main
+  34 python .\src\data_ingestion.py
+  35 dvc status
+  36 dvc add data\processed\student_performance_pca.csv
+  37 git status
+  38 git add .
+  39 git log --reflog
+  40 git commit -m "PCA with 2 components- Earlier commit was with 3 components, but mistakently written as 2 comp"
+  41 dvc push
+  42 git push origin main
+  43 history>commands.txt
